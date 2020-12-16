@@ -3,7 +3,7 @@ package br.edu.infnet.appPizzaria.model.negocio;
 import br.edu.infnet.appPizzaria.model.exception.TipoIndisponivelException;
 import br.edu.infnet.appPizzaria.model.exception.MarcaIndisponivelException;
 
-public class Bebida extends Produto {
+public class Bebida extends Produtos {
 
 	private float tipo;
 	private String marca;
