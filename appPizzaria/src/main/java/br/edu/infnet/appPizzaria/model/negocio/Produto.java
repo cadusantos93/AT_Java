@@ -1,13 +1,13 @@
 package br.edu.infnet.appPizzaria.model.negocio;
 
-public abstract class Produtos {
+public abstract class Produto {
 
 	private String descricao;
 	private float valor;
 	private boolean producaoPropria;
     private String massa;
 	
-	public Produtos(String descricao, float valor, boolean producaoPropria, String massa) {
+	public Produto(String descricao, float valor, boolean producaoPropria, String massa) {
 		this.descricao = descricao;
 		this.valor = valor;
 		this.producaoPropria = producaoPropria;
@@ -16,7 +16,7 @@ public abstract class Produtos {
 
 	public abstract float calcularValorVenda();
 	
-	public String obterValorPorSabores() {
+	public String obterValorPorSabor() {
 		StringBuilder sb = new StringBuilder();
 		sb.append(this.getDescricao());
 		sb.append(";");

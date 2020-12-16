@@ -2,7 +2,7 @@ package br.edu.infnet.appPizzaria.model.negocio;
 
 import br.edu.infnet.appPizzaria.model.exception.BordaIndisponivelException;
 
-public class Pizzas extends Produtos {
+public class Pizza extends Produto {
 
 	private boolean doce;
 	private String borda;

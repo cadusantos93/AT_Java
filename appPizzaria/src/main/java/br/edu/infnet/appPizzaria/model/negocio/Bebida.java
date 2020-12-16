@@ -3,7 +3,7 @@ package br.edu.infnet.appPizzaria.model.negocio;
 import br.edu.infnet.appPizzaria.model.exception.TipoIndisponivelException;
 import br.edu.infnet.appPizzaria.model.exception.MarcaIndisponivelException;
 
-public class Bebida extends Produtos {
+public class Bebida extends Produto {
 
 	private float tipo;
 	private String marca;
@@ -33,7 +33,7 @@ public class Bebida extends Produtos {
 	public float getTipo() {
 		return tipo;
 	}
-	public void setTipo(float this) throws TipoIndisponivelException {
+	public void setTipo(float tipo) throws TipoIndisponivelException {
 		
 		if(tipo <= 0) {
 			throw new TipoIndisponivelException("A bebida não está disponível.");

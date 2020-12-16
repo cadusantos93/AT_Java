@@ -3,7 +3,7 @@ package br.edu.infnet.appPizzaria.model.negocio;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class Pedidos {
+public class Pedido {
 
 	private LocalDateTime data;
 	private boolean web;
