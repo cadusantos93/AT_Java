@@ -9,7 +9,7 @@ public class Vinho extends Produto {
 	private String rotulo;
     private String ano;
 	
-	public Vinho(String descricao, float valor, boolean producaoPropria) {
+	public Vinho(String descricao, float valor, boolean producaoPropria, ) {
 		super(descricao, valor, producaoPropria);
 	}
 	
@@ -28,11 +28,11 @@ public class Vinho extends Produto {
 	@Override
 	public float calcularValorVenda() {
 		
-		return this.getValor() + (this.isProducaoPropria() ? 2 : 0) + this.getTipo() * 0.02f;
+		return this.getValor() + (this.isProducaoPropria() ? 2 : 0) + this.getRotulo() * 0.02f;
 	}
 
 	public float getUva() {
-		return tipo;
+		return uva;
 	}
 	public void setUva(String uva) throws UvaIndisponivelException {
 		
@@ -40,7 +40,7 @@ public class Vinho extends Produto {
 			throw new UvaIndisponivelException("Não há vinho com a uva desejada disponível.");
 		}
 		
-		this.tipo = tipo;
+		this.uva = uva;
 	}
 	public String getAno() {
 		return ano;
