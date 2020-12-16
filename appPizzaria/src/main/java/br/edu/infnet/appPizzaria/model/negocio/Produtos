@@ -22,6 +22,8 @@ public abstract class Produtos {
 		sb.append(";");
 		sb.append(this.calcularValorVenda());
 		sb.append("\r");
+        sb.append(this.getMassa());
+
 		
 		return sb.toString();
 	}
